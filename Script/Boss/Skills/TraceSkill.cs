@@ -12,6 +12,7 @@ namespace Boss {
 			moveBehavior.waypoint = self.target.position;
 			moveBehavior.execute();
 			moveBehavior.checkOutOfVision();
+			self.transform.LookAt(self.target);
 		}
 
 		public void enter (BasicBoss boss) {

@@ -8,7 +8,7 @@ public class BasicBoss : MoveClass {
 	public Animator anim;
 	public SkillState currentState;
 	public int maxWalkVelocity = 3;
-	public int maxAttackVelocity = 7;
+	public int maxAttackVelocity = 5;
 	public int slowRadius = 8;
 	public float spawnRange = 15;
 	public int searchRadius = 6;
