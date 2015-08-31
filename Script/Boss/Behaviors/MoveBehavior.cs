@@ -35,15 +35,21 @@ namespace Boss {
 				setWayPoint();
 			}
 		}
+
+		public void checkOutOfVision() {
+			float distance = Vector3.Distance(waypoint, self.transform.position);
+			if (distance > self.loseVisionRange) {
+				self.changeState(self.gameObject.AddComponent<WanderSkill>());
+			}
+		}
 		
-		public void execute(Vector3 point) {
-			self.transform.LookAt(point);
-			float distance = Vector3.Distance(point, self.transform.position);
-			Vector3 moveDir = self.transform.forward + new Vector3(0,self.MoveDir.y,0) * mSpeed;
-			self.m_CharCtrl.Move(moveDir * Time.deltaTime);
-			
-			self.transform.eulerAngles = Vector3.zero;
-			
+		
+		public void execute() {
+			self.transform.LookAt(new Vector3(waypoint.x, self.transform.position.y, waypoint.z));
+			float distance = Vector3.Distance(waypoint, self.transform.position);
+			Vector3 moveDir = self.transform.forward * Time.deltaTime * mSpeed;
+			self.m_CharCtrl.Move( moveDir  + new Vector3(0,self.MoveDir.y,0));
+
 			if ( distance < 2f) {
 				reachCallback();
 			}

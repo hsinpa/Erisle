@@ -9,16 +9,16 @@ namespace Boss {
 		#region SkillState implementation
 
 		public void execute () {
-			moveBehavior.execute(self.target.position);
+			moveBehavior.waypoint = self.target.position;
+			moveBehavior.execute();
+			moveBehavior.checkOutOfVision();
 		}
 
 		public void enter (BasicBoss boss) {
 			self = boss;
 			moveBehavior = new MoveBehavior(boss,  self.maxAttackVelocity, delegate {
-				
+				self.changeState(gameObject.AddComponent<AttackSkill>());
 			});
-			moveBehavior.waypoint = self.target.position;
-			
 		}
 
 		public void exit ()	{

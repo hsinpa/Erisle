@@ -11,7 +11,7 @@ public class WanderSkill : MonoBehaviour, SkillState{
 		
 		#region SkillState implementation
 		public void execute () {
-			moveBehavior.execute(moveBehavior.waypoint);
+			moveBehavior.execute();
 			searchBehavior.execute();
 			
 		}

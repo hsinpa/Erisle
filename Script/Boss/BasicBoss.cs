@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Boss {
 public class BasicBoss : MoveClass {
@@ -11,11 +12,13 @@ public class BasicBoss : MoveClass {
 	public int slowRadius = 8;
 	public float spawnRange = 15;
 	public int searchRadius = 6;
+	public int loseVisionRange = 15;
 	public int playerLayer = 1 << 10;
 	public int terrainLayer = 1 << 8;
 	public Transform target;
 	public Vector3 centerPoint;
-		
+	public List<AttackSet> attackSets = new List<AttackSet>();
+
 	public void Start() {
 		anim = gameObject.GetComponent<Animator>();
 		centerPoint = transform.position;
