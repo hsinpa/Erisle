@@ -466,6 +466,10 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -2760,7 +2764,23 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: .135755122
+        functionName: Fire
+        data: 
+        objectReferenceParameter: {fileID: 195620, guid: 81a0c7ff47820354eb8c47d416bd7885,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: .987847447
+        functionName: Hold
+        data: 
+        objectReferenceParameter: {fileID: 195620, guid: 81a0c7ff47820354eb8c47d416bd7885,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1

@@ -5,7 +5,6 @@ using System.Collections.Generic;
 namespace Boss {
 public class BasicBoss : MoveClass {
 	public float hp = 100;
-	public Animator anim;
 	public SkillState currentState;
 	public int maxWalkVelocity = 3;
 	public int maxAttackVelocity = 5;
@@ -20,7 +19,6 @@ public class BasicBoss : MoveClass {
 	public List<AttackSet> attackSets = new List<AttackSet>();
 
 	public void Start() {
-		anim = gameObject.GetComponent<Animator>();
 		centerPoint = transform.position;
 	}
 	

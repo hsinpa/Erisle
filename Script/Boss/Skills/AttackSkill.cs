@@ -5,6 +5,7 @@ namespace Boss {
 	public class AttackSkill : MonoBehaviour, SkillState {
 		private BasicBoss self;
 		private AttackBehavior attackBehavior;
+		private MoveBehavior moveBehavior;
 
 		#region SkillState implementation
 		
@@ -14,9 +15,9 @@ namespace Boss {
 		public void enter (BasicBoss boss) {
 			self = boss;
 			attackBehavior = new AttackBehavior();
-			self.transform.rotation = Quaternion.LookRotation(self.target.position);
 
-			Debug.Log(attackBehavior.getAttackAnimate( self.attackSets ));
+			string attackMethod = attackBehavior.getAttackAnimate( self.attackSets );
+			self.m_Ani.SetTrigger(attackMethod);
 		}
 		
 		public void exit ()	{
@@ -27,12 +28,11 @@ namespace Boss {
 
 
 		public void Fire() {
-			Vector3 targetPosition = self.target.position;
-			self.transform.rotation = Quaternion.LookRotation(new Vector3(targetPosition.x, self.transform.position.y,targetPosition.z ));
+			Debug.Log("Fire");
 		}
 
 		public void Hold() {
-			
+			self.changeState(gameObject.AddComponent<TraceSkill>());
 		}
 	}
 }

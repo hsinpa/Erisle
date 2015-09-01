@@ -15,6 +15,7 @@ namespace Boss {
 			self = boss;
 			reachCallback = callback;
 			mSpeed = speed;
+			self.m_Ani.SetInteger("Move", 1);
 		}
 		
 		public List<Vector3> getSpawnPos() {
@@ -31,7 +32,6 @@ namespace Boss {
 			RaycastHit hitInfo;
 			if (Physics.Linecast(points[0], points[1], out hitInfo, self.terrainLayer)) {
 				waypoint = hitInfo.point;
-				turnToDirection();
 			} else {
 				setWayPoint();
 			}
@@ -45,16 +45,19 @@ namespace Boss {
 		}
 		
 		public void turnToDirection() {
-			float delay = 80f;
+			float delay = 10f;
 			Vector3 normalizedDirection = Vector3.Normalize(new Vector3(waypoint.x, self.transform.position.y, waypoint.z) -self.transform.position);
-			Hashtable hashtable = new Hashtable();
-			hashtable.Add("rotation", Quaternion.LookRotation(normalizedDirection).eulerAngles);
-			hashtable.Add("speed", delay);
-			
-			iTween.RotateTo(self.gameObject, hashtable);
+			Quaternion newRotation = Quaternion.LookRotation(normalizedDirection);
+//			Hashtable hashtable = new Hashtable();
+//			hashtable.Add("rotation", Quaternion.LookRotation(normalizedDirection).eulerAngles);
+//			hashtable.Add("speed", delay);
+//			
+//			iTween.RotateTo(self.gameObject, hashtable);
+			self.transform.rotation = Quaternion.Slerp(self.transform.rotation, newRotation, delay*Time.deltaTime);
+
 		}			
 		
-		public void execute() {
+		public void moveToPoint() {
 				float distance = Vector3.Distance(waypoint, self.transform.position);
 				Vector3 moveDir = self.transform.forward * Time.deltaTime * mSpeed;
 				self.m_CharCtrl.Move( moveDir  + new Vector3(0,self.MoveDir.y,0));

@@ -10,9 +10,9 @@ namespace Boss {
 
 		public void execute () {
 			moveBehavior.waypoint = self.target.position;
-			moveBehavior.execute();
+			moveBehavior.turnToDirection();
+			moveBehavior.moveToPoint();
 			moveBehavior.checkOutOfVision();
-			self.transform.LookAt(self.target);
 		}
 
 		public void enter (BasicBoss boss) {
