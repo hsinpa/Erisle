@@ -45,16 +45,10 @@ namespace Boss {
 		}
 		
 		public void turnToDirection() {
-			float delay = 10f;
+			float delay = 5f;
 			Vector3 normalizedDirection = Vector3.Normalize(new Vector3(waypoint.x, self.transform.position.y, waypoint.z) -self.transform.position);
 			Quaternion newRotation = Quaternion.LookRotation(normalizedDirection);
-//			Hashtable hashtable = new Hashtable();
-//			hashtable.Add("rotation", Quaternion.LookRotation(normalizedDirection).eulerAngles);
-//			hashtable.Add("speed", delay);
-//			
-//			iTween.RotateTo(self.gameObject, hashtable);
 			self.transform.rotation = Quaternion.Slerp(self.transform.rotation, newRotation, delay*Time.deltaTime);
-
 		}			
 		
 		public void moveToPoint() {
