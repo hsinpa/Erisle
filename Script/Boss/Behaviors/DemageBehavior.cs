@@ -14,6 +14,11 @@ namespace Boss {
 		public void demaged(JSONObject info) {
 			string demageType = info.GetField("type").str;
 			int demage = (int)info.GetField("demage").n;
+			self.hp -= demage;
+
+			if (self.hp <= 0 ) {
+				//DIE
+			}
 
 			List<JSONObject> effectList = info.GetField("effectList").list;
 
@@ -29,7 +34,7 @@ namespace Boss {
 		public void effectHandler(List<JSONObject> effects) {
 
 			foreach(JSONObject effect in effects) {
-
+				effectAttacher(effect);
 			}
 		}
 
