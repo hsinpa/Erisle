@@ -29,6 +29,7 @@ namespace Boss {
 
 		public void Fire() {
 			Debug.Log("Fire");
+			//self.transform.LookAt( new Vector3 (self.target.position.x, self.transform.position.y ,self.target.position.z));
 		}
 
 		public void Hold() {

@@ -45,7 +45,7 @@ namespace Boss {
 		}
 		
 		public void turnToDirection() {
-			float delay = 5f;
+			float delay = 3f;
 			Vector3 normalizedDirection = Vector3.Normalize(new Vector3(waypoint.x, self.transform.position.y, waypoint.z) -self.transform.position);
 			Quaternion newRotation = Quaternion.LookRotation(normalizedDirection);
 			self.transform.rotation = Quaternion.Slerp(self.transform.rotation, newRotation, delay*Time.deltaTime);
@@ -54,10 +54,11 @@ namespace Boss {
 		public void moveToPoint() {
 				float distance = Vector3.Distance(waypoint, self.transform.position);
 				Vector3 moveDir = self.transform.forward * Time.deltaTime * mSpeed;
-				self.m_CharCtrl.Move( moveDir  + new Vector3(0,self.MoveDir.y,0));
 				
-				if ( distance < 2f) {
+				if ( distance < 3f) {
 					reachCallback();
+				} else {
+					self.m_CharCtrl.Move( moveDir  + new Vector3(0,self.MoveDir.y,0));
 				}
 			
 		}

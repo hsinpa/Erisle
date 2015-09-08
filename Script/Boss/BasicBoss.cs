@@ -6,8 +6,8 @@ namespace Boss {
 public class BasicBoss : MoveClass {
 	public float hp = 100;
 	public SkillState currentState;
-	public int maxWalkVelocity = 3;
-	public int maxAttackVelocity = 5;
+	public int maxWalkVelocity = 1;
+	public int maxAttackVelocity = 2;
 	public float spawnRange = 15;
 	public int searchRadius = 10;
 	public int loseVisionRange = 15;
