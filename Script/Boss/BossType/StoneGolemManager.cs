@@ -11,9 +11,9 @@ namespace Boss {
 			base.Start();
 			currentState = gameObject.AddComponent<IdleSkill>();
 			currentState.enter(this);
-			attackSets.Add(new AttackSet("Normal", 0));
-//			attackSets.Add(new AttackSet("Consecutive", 20));
-//			attackSets.Add(new AttackSet("Tornado", 0));
+			attackSets.Add(new AttackSet("Normal", 50));
+			attackSets.Add(new AttackSet("Consecutive", 20));
+			attackSets.Add(new AttackSet("Tornado", 0));
 		}
 		
 		protected void FixedUpdate () {

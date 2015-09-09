@@ -444,7 +444,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -456,7 +456,15 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: .966244817
+        functionName: Hold
+        data: 
+        objectReferenceParameter: {fileID: 103476, guid: cdf9b613ec082d042ae73751c6c0976b,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
@@ -873,7 +881,7 @@ ModelImporter:
       - time: .398752302
         functionName: Fire
         data: 
-        objectReferenceParameter: {fileID: 111914, guid: 81a0c7ff47820354eb8c47d416bd7885,
+        objectReferenceParameter: {fileID: 103476, guid: cdf9b613ec082d042ae73751c6c0976b,
           type: 2}
         floatParameter: 0
         intParameter: 0
@@ -881,7 +889,7 @@ ModelImporter:
       - time: .995999873
         functionName: Hold
         data: 
-        objectReferenceParameter: {fileID: 111914, guid: 81a0c7ff47820354eb8c47d416bd7885,
+        objectReferenceParameter: {fileID: 103476, guid: cdf9b613ec082d042ae73751c6c0976b,
           type: 2}
         floatParameter: 0
         intParameter: 0
@@ -1298,7 +1306,23 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: .298609167
+        functionName: Fire
+        data: 
+        objectReferenceParameter: {fileID: 103476, guid: cdf9b613ec082d042ae73751c6c0976b,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: .965807021
+        functionName: Hold
+        data: 
+        objectReferenceParameter: {fileID: 103476, guid: cdf9b613ec082d042ae73751c6c0976b,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
@@ -2537,7 +2561,15 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: .958665311
+        functionName: Hold
+        data: 
+        objectReferenceParameter: {fileID: 103476, guid: cdf9b613ec082d042ae73751c6c0976b,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1

@@ -29,7 +29,8 @@ public class WanderSkill : MonoBehaviour, SkillState{
 			});
 			
 			
-			
+			self.state = BasicBoss.BossState.Move;
+
 			moveBehavior.setWayPoint();			
 		}
 		

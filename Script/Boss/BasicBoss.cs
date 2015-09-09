@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 namespace Boss {
 public class BasicBoss : MoveClass {
+	public enum BossState {Idle, Move, Stun, Block, Attack};
+	public BossState state = BossState.Idle;
 	public float hp = 100;
 	public SkillState currentState;
 	public int maxWalkVelocity = 1;
@@ -14,6 +16,7 @@ public class BasicBoss : MoveClass {
 	public int playerLayer = 1 << 10;
 	public int terrainLayer = 1 << 8;
 	public Transform target;
+	public Transform basePos;
 	public Vector3 centerPoint;
 	public List<AttackSet> attackSets = new List<AttackSet>();
 	protected DemageBehavior damagebehavior;

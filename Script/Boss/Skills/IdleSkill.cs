@@ -17,6 +17,8 @@ namespace Boss {
 				self.changeState(gameObject.AddComponent<TraceSkill>());
 			});
 			self.m_Ani.SetInteger("Move", 0);
+			self.state = BasicBoss.BossState.Idle;
+
 		}
 		
 		public void exit ()	{
