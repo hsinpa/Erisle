@@ -14,6 +14,7 @@ namespace Boss {
 			attackSets.Add(new AttackSet("Normal", 50));
 			attackSets.Add(new AttackSet("Consecutive", 20));
 			attackSets.Add(new AttackSet("Tornado", 0));
+			
 		}
 		
 		protected void FixedUpdate () {

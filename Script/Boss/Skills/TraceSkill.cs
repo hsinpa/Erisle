@@ -27,7 +27,7 @@ namespace Boss {
 			if ( distance > 5 ) {
 				self.changeState(gameObject.AddComponent<AttackSkill>());
 			} else {
-				StartCoroutine(checkRangeAttackTime(4));
+				StartCoroutine(checkRangeAttackTime(2));
 			}
 		}
 
@@ -40,7 +40,7 @@ namespace Boss {
 					self.changeState(gameObject.AddComponent<AttackSkill>());
 				}
 			});
-			StartCoroutine(checkRangeAttackTime(6));
+			StartCoroutine(checkRangeAttackTime(3));
 			self.state = BasicBoss.BossState.Move;
 		}
 

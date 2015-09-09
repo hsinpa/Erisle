@@ -48,12 +48,14 @@ public abstract class MoveClass : MonoBehaviour {
 		}
 		else
 		{
+			Debug.Log("island");
 			m_isGround = true;
 		}
 		//限制最大掉落速度 = 重力*2
 		if (MoveDir.y <= -m_Grivate*2 && m_Grivate != 0)
-		{
+		{	
 			MoveDir.y = -m_Grivate*2;
 		}
+		//m_CharCtrl.Move( new Vector3(0,MoveDir.y,0));
 	}
 }

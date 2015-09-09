@@ -27,7 +27,7 @@ namespace Boss {
 		public void golemEffect(float n, int endureN) {
 			undertakeDamage += (int)n;
 			Debug.Log (undertakeDamage);
-			if (undertakeDamage >= endureN) {
+			if (undertakeDamage >= endureN && self.state != BasicBoss.BossState.Block) {
 				undertakeDamage = 0;
 				self.m_Ani.SetBool("Stone", true);
 				self.state = BasicBoss.BossState.Block;

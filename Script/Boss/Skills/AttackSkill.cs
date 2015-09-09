@@ -5,7 +5,6 @@ namespace Boss {
 	public class AttackSkill : MonoBehaviour, SkillState {
 		private BasicBoss self;
 		private AttackBehavior attackBehavior;
-		private MoveBehavior moveBehavior;
 
 		#region SkillState implementation
 		
@@ -38,12 +37,10 @@ namespace Boss {
 		public void Fire() {
 			Debug.Log("Fire");
 			self.state = BasicBoss.BossState.Attack;
-			//self.transform.LookAt( new Vector3 (self.target.position.x, self.transform.position.y ,self.target.position.z));
 		}
 
 		public void Hold() {
 			Debug.Log("Hold");
-
 			self.changeState(gameObject.AddComponent<TraceSkill>());
 		}
 	}
