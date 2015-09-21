@@ -465,6 +465,14 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
+      - time: .346580595
+        functionName: Fire
+        data: 
+        objectReferenceParameter: {fileID: 103476, guid: cdf9b613ec082d042ae73751c6c0976b,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
@@ -2982,7 +2990,15 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: .861244023
+        functionName: Resume
+        data: 
+        objectReferenceParameter: {fileID: 103476, guid: cdf9b613ec082d042ae73751c6c0976b,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1

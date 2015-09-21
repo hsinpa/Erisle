@@ -4,7 +4,7 @@ using System;
 
 namespace Boss {
 	public class StoneGolemManager : BasicBoss {
-		int canEndureDemage = 20;
+		int canEndureDemage = 50;
 
 		void Start() {
 			//Defualt Search

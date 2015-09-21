@@ -11,7 +11,9 @@ namespace Boss {
 		
 		public void enter (BasicBoss boss) {
 			self = boss;
-			StartCoroutine(resumeFromNegativeState(stunTime));
+
+			if (self.state == BasicBoss.BossState.Stun)
+				StartCoroutine(resumeFromNegativeState(stunTime));
 		}
 
 
@@ -24,6 +26,5 @@ namespace Boss {
 		public void exit ()	{
 			Destroy(this);
 		}
-		
 	}
 }

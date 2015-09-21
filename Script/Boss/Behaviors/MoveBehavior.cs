@@ -57,7 +57,7 @@ namespace Boss {
 				float distance = Vector3.Distance(waypoint, self.transform.position);
 				Vector3 moveDir = self.transform.forward * Time.deltaTime * mSpeed;
 				
-				if ( distance < 4f) {
+				if ( distance < 2f) {
 					reachCallback();
 				} else {
 					self.m_CharCtrl.Move( moveDir  + new Vector3(0,self.MoveDir.y,0));

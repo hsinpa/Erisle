@@ -6,9 +6,18 @@ namespace Boss {
 	public class DemageBehavior {
 		BasicBoss self;
 		int undertakeDamage = 0;
+		int maxStun = 2;
+		int currentStun = 0;
+		float fullHP;
+
+		float periodhPLineToCheckPerNum;
+		float periodhPLineToCheck;
 
 		public DemageBehavior(BasicBoss boss) {
 			self = boss;
+			fullHP = self.hp;
+			periodhPLineToCheckPerNum = fullHP / 10;
+			periodhPLineToCheck = fullHP - periodhPLineToCheckPerNum;
 		}
 
 		public void demaged(JSONObject info) {
@@ -20,8 +29,25 @@ namespace Boss {
 				//DIE
 			}
 
+			if (self.hp < periodhPLineToCheck) {
+				stunHandler();
+			}
+
 			List<JSONObject> effectList = info.GetField("effectList").list;
 
+		}
+
+		public void stunHandler() {
+			periodhPLineToCheck =  periodhPLineToCheck - periodhPLineToCheckPerNum;
+			float remain = self.hp / fullHP;
+			float stunChance = 1 - remain;
+			float possibleStunChance = Random.Range(0, 1);
+			if (stunChance > possibleStunChance && currentStun < maxStun) {
+				currentStun++;
+				self.m_Ani.SetTrigger("Stun");
+				self.changeState(self.gameObject.AddComponent<StunSkill>());
+
+			}
 		}
 
 		public void golemEffect(float n, int endureN) {

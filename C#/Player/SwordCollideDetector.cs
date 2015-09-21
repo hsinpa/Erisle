@@ -46,6 +46,17 @@ public class SwordCollideDetector : MonoBehaviour {
 			inputHandler.anim.speed= 0.7f;
 			}
 		}
+		if (other.tag == "Boss") {
+			Boss.BasicBoss unit = other.GetComponent<Boss.BasicBoss>();
+			JSONObject jsonObject = new JSONObject(JSONObject.Type.OBJECT);
+			jsonObject.AddField("demage", 10);
+			//string
+			jsonObject.AddField("type", "melee");
+			//array
+			JSONObject arr = new JSONObject(JSONObject.Type.ARRAY);
+			jsonObject.AddField("effectList", arr);
+			unit.beDamaged(jsonObject);
+		}
 	}
 
 	void OnTriggerExit(Collider other) {
