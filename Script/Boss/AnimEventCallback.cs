@@ -13,11 +13,6 @@ namespace Boss {
 
 		}
 
-		public void Resume() {
-			Debug.Log("StunDone");
-			self.changeState(gameObject.AddComponent<TraceSkill>());
-		}
-		
 		public void Fire() {
 			Debug.Log("Fire");
 			self.state = BasicBoss.BossState.Attack;

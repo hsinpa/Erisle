@@ -1,0 +1,19 @@
+{
+  "StoneGolem" : [
+      {"name" : "Normal",
+        "chance" : 50,
+        "damage" : 30,
+        "effect" : "push"
+      }, {
+          "name" : "Consecutive",
+          "chance" : 20,
+          "damage" : 20,
+          "effect" : "push"
+      },{
+        "name" : "Tornado",
+        "chance" : 0,
+        "damage" :30 ,
+        "effect" : "fly"
+        }
+    ]
+}

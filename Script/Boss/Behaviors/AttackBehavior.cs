@@ -7,18 +7,18 @@ namespace Boss {
 	public class AttackBehavior {
 
 
-		public string getAttackAnimate(List<AttackSet> attackSet) {
-			int maxP = 100;
+		public string getAttackAnimate(List<JSONObject> attackSet) {
+			float maxP = 100;
 			int randomP = UnityEngine.Random.Range(1, 100);
 			for (int i = 0; i < attackSet.Count; i++) {
 
-				if (randomP <= maxP && randomP >= attackSet[i].chance) {
-					return attackSet[i].name;
+				if (randomP <= maxP && randomP >= attackSet[i].GetField("chance").n) {
+					return attackSet[i].GetField("name").str;
 				}
-				maxP = attackSet[i].chance;
+				maxP = attackSet[i].GetField("chance").n;
 			}
 
-			return attackSet[0].name;
+			return attackSet[0].GetField("name").str;
 		}
 
 

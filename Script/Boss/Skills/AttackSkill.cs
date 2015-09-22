@@ -5,6 +5,8 @@ namespace Boss {
 	public class AttackSkill : MonoBehaviour, SkillState {
 		private BasicBoss self;
 		private AttackBehavior attackBehavior;
+		BossAttackCollider[] bossAttackColliders;
+
 		#region SkillState implementation
 		
 		public void execute () {
@@ -14,6 +16,7 @@ namespace Boss {
 		public void enter (BasicBoss boss) {
 			self = boss;
 			attackBehavior = new AttackBehavior();
+			bossAttackColliders = self.gameObject.GetComponentsInChildren<BossAttackCollider>();
 
 			float distance = Vector3.Distance(self.target.position, self.transform.position);
 			
@@ -22,7 +25,7 @@ namespace Boss {
 				return;
 			}
 
-			string attackMethod = attackBehavior.getAttackAnimate( self.attackSets );
+			string attackMethod = attackBehavior.getAttackAnimate( self.bossData );
 			self.m_Ani.SetTrigger(attackMethod);
 		}
 		
@@ -31,6 +34,21 @@ namespace Boss {
 		}
 		
 		#endregion
-
+		public void Fire() {
+			Debug.Log("Fire");
+			self.state = BasicBoss.BossState.Attack;
+			
+			foreach(BossAttackCollider weapon in bossAttackColliders) {
+				weapon.on = true;
+			}
+		}
+		
+		public void Hold() {
+			Debug.Log("Hold");
+			self.changeState(gameObject.AddComponent<TraceSkill>());
+			foreach(BossAttackCollider weapon in bossAttackColliders) {
+				weapon.on = false;
+			}
+		}
 	}
 }

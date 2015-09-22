@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Player : MonoBehaviour {
 	public float hp = 100;
@@ -26,4 +27,41 @@ public class Player : MonoBehaviour {
 			hp -= damage;
 		}
 	}
+
+
+	//Update Version
+	public void underBossAttack(JSONObject attackData) {
+		float damage = attackData.GetField("damage").n;
+		string effect = attackData.GetField("effect").str;
+
+		if (armor > 0) {
+			armor -= damage;
+		} else {
+			hp -= damage;
+		}
+		effectAttacher(effect);
+	}
+
+	
+	private void effectAttacher(string effect) {
+		switch (effect) {
+		case "fly" :
+			break;
+		case "stun" :
+			break;
+		case "push" :
+			break;
+		default :
+			break;
+		}
+	}
+
+	private void flyEffect() {
+
+	}
+
+	private void pushEffect() {
+
+	}
+
 }

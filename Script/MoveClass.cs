@@ -48,7 +48,6 @@ public abstract class MoveClass : MonoBehaviour {
 		}
 		else
 		{
-			Debug.Log("island");
 			m_isGround = true;
 		}
 		//限制最大掉落速度 = 重力*2

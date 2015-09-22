@@ -32,19 +32,18 @@ namespace Boss {
 			if (self.hp < periodhPLineToCheck) {
 				stunHandler();
 			}
-
 			List<JSONObject> effectList = info.GetField("effectList").list;
-
 		}
 
 		public void stunHandler() {
 			periodhPLineToCheck =  periodhPLineToCheck - periodhPLineToCheckPerNum;
 			float remain = self.hp / fullHP;
-			float stunChance = 1 - remain;
-			float possibleStunChance = Random.Range(0, 1);
-			if (stunChance > possibleStunChance && currentStun < maxStun) {
-				currentStun++;
+			float stunChance = (1 - remain);
+			float possibleStunChance = (float) Random.Range(0, 100) / 100;
+			if (stunChance > possibleStunChance && currentStun < maxStun && self.state != BasicBoss.BossState.Stun) {
+				currentStun++; 
 				self.m_Ani.SetTrigger("Stun");
+				self.state = BasicBoss.BossState.Stun;
 				self.changeState(self.gameObject.AddComponent<StunSkill>());
 
 			}
@@ -52,11 +51,9 @@ namespace Boss {
 
 		public void golemEffect(float n, int endureN) {
 			undertakeDamage += (int)n;
-			Debug.Log (undertakeDamage);
-			if (undertakeDamage >= endureN && self.state != BasicBoss.BossState.Block) {
+			if (undertakeDamage >= endureN && self.state != BasicBoss.BossState.Block && self.state != BasicBoss.BossState.Stun) {
 				undertakeDamage = 0;
-				self.m_Ani.SetBool("Stone", true);
-				self.state = BasicBoss.BossState.Block;
+				self.m_Ani.SetBool("Block", true);
 				self.changeState(self.gameObject.AddComponent<StunSkill>());
 			}
 		}

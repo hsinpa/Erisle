@@ -4,17 +4,18 @@ using System;
 
 namespace Boss {
 	public class StoneGolemManager : BasicBoss {
-		int canEndureDemage = 50;
+		int canEndureDemage = 200;
 
 		void Start() {
 			//Defualt Search
 			base.Start();
+			getBossData("StoneGolem");
 			currentState = gameObject.AddComponent<IdleSkill>();
 			currentState.enter(this);
-			attackSets.Add(new AttackSet("Normal", 50));
-			attackSets.Add(new AttackSet("Consecutive", 20));
-			attackSets.Add(new AttackSet("Tornado", 0));
-			
+//			attackSets.Add(new AttackSet("Normal", 50));
+//			attackSets.Add(new AttackSet("Consecutive", 20));
+//			attackSets.Add(new AttackSet("Tornado", 0));
+
 		}
 		
 		protected void FixedUpdate () {

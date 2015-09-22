@@ -11,20 +11,30 @@ namespace Boss {
 		
 		public void enter (BasicBoss boss) {
 			self = boss;
+			Debug.Log(self.m_Ani.GetBool("Block"));
 
-			if (self.state == BasicBoss.BossState.Stun)
+			if (self.m_Ani.GetBool("Block")) {
+				self.state = BasicBoss.BossState.Block;
 				StartCoroutine(resumeFromNegativeState(stunTime));
+			}
 		}
 
 
 		IEnumerator resumeFromNegativeState(float waitTime) {
 			yield return new WaitForSeconds(waitTime);
-			self.m_Ani.SetBool("Stone", false);
+			Debug.Log ("isBlock");
+			self.m_Ani.SetBool("Block", false);
 			self.changeState(gameObject.AddComponent<TraceSkill>());
 		}
 		
 		public void exit ()	{
 			Destroy(this);
 		}
+
+		public void Resume() {
+			Debug.Log("Hold");
+			self.changeState(gameObject.AddComponent<TraceSkill>());
+		}
+
 	}
 }
