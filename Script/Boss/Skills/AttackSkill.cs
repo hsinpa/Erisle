@@ -25,8 +25,12 @@ namespace Boss {
 				return;
 			}
 
-			string attackMethod = attackBehavior.getAttackAnimate( self.bossData );
-			self.m_Ani.SetTrigger(attackMethod);
+			JSONObject attackObject = attackBehavior.getAttackAnimate( self.bossData );
+			foreach(BossAttackCollider weapon in bossAttackColliders) {
+				weapon.attackInfo = attackObject;
+			}
+
+			self.m_Ani.SetTrigger(attackObject.GetField("name").str);
 		}
 		
 		public void exit ()	{

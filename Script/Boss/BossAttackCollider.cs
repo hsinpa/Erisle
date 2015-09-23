@@ -4,14 +4,14 @@ using System.Collections;
 namespace Boss {
 	public class BossAttackCollider : MonoBehaviour {
 		public bool on = false;
-		public float damage = 0;
+		public JSONObject attackInfo;
 
 
 		void OnTriggerStay(Collider other) {
 			if(on && other.gameObject.tag == "Player") {
 				on = false;
-				//Deduct enemy's hp 
-				Debug.Log("Damaged");
+				//Deduct enemy's hp
+				other.gameObject.GetComponent<Player>().underBossAttack(attackInfo);
 			}
 		}
 	}

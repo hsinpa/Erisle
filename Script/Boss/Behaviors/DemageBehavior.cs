@@ -40,7 +40,7 @@ namespace Boss {
 			float remain = self.hp / fullHP;
 			float stunChance = (1 - remain);
 			float possibleStunChance = (float) Random.Range(0, 100) / 100;
-			if (stunChance > possibleStunChance && currentStun < maxStun && self.state != BasicBoss.BossState.Stun) {
+			if (stunChance > possibleStunChance && currentStun < maxStun && self.state != BasicBoss.BossState.Stun && self.state != BasicBoss.BossState.Block) {
 				currentStun++; 
 				self.m_Ani.SetTrigger("Stun");
 				self.state = BasicBoss.BossState.Stun;
