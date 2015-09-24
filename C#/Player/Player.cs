@@ -5,13 +5,13 @@ using System.Collections.Generic;
 public class Player : MonoBehaviour {
 	public float hp = 100;
 	public float armor = 100;
-	public enum State {Idle, Attack};
-
+	public enum State {Idle, Attack, Disable};
+	private Input_Handler inputHandler;
 	protected int maxArmor = 100;
 
 	void Start() {
 		InvokeRepeating("resumeArmor", 2, 1.5f);
-
+		inputHandler = gameObject.GetComponent<Input_Handler>();
 	}
 
 	void resumeArmor() {
@@ -44,24 +44,34 @@ public class Player : MonoBehaviour {
 
 	
 	private void effectAttacher(string effect) {
-		switch (effect) {
-		case "fly" :
-			break;
-		case "stun" :
-			break;
-		case "push" :
-			break;
-		default :
-			break;
+		if (inputHandler.currentState != Player.State.Disable) {
+			switch (effect) {
+			case "fly" :
+				flyEffect();
+				break;
+			case "stun" :
+				break;
+			case "push" :
+				pushEffect();
+				break;
+			default :
+				break;
+			}
 		}
 	}
 
-	private void flyEffect() {
+	public void Resume() {
+		inputHandler.currentState = Player.State.Idle;
+	}
 
+	private void flyEffect() {
+		inputHandler.anim.SetTrigger("Fly");
+		inputHandler.currentState = Player.State.Disable;
 	}
 
 	private void pushEffect() {
-
+		inputHandler.anim.SetTrigger("Hurt");
+		inputHandler.currentState = Player.State.Disable;
 	}
 
 }

@@ -56,32 +56,27 @@ public class PlayerMove : MoveClass
 	public void CharacterAni()
 	{
 		AnimatorStateInfo currentState = m_Ani.GetCurrentAnimatorStateInfo(0);
-		if (inputHandler.Attack_Num < 1) {
+		if (inputHandler.Attack_Num < 1 && inputHandler.currentState == Player.State.Idle) {
 			if (SightSwitch == false) {
 
-				if ((Input.GetKey (KeyCode.W) | Input.GetKey (KeyCode.S) | Input.GetKey (KeyCode.A) | Input.GetKey (KeyCode.D)) && 
-					inputHandler.currentState != Player.State.Attack) {
+				if ((Input.GetKey (KeyCode.W) | Input.GetKey (KeyCode.S) | Input.GetKey (KeyCode.A) | Input.GetKey (KeyCode.D))) {
 					m_Ani.SetBool ("Run", true);
 				} else {
 					m_Ani.SetBool ("Run", false);
 				}
 
 			}else{
-				if ((Input.GetKey (KeyCode.W)) && 
-				    inputHandler.currentState != Player.State.Attack) {
+				if ((Input.GetKey (KeyCode.W)) ) {
 					m_Ani.SetFloat ("RunDirection1", 0);
 				} else {
 
-				if ((Input.GetKey (KeyCode.S)) && 
-				    inputHandler.currentState != Player.State.Attack) {
+				if ((Input.GetKey (KeyCode.S)) ) {
 						m_Ani.SetFloat ("RunDirection1", 1);
 				} else {
-				if ((Input.GetKey (KeyCode.A)) && 
-				    inputHandler.currentState != Player.State.Attack) {
+				if ((Input.GetKey (KeyCode.A)) ) {
 							m_Ani.SetFloat ("RunDirection1", 2);
 				} else {
-				if ((Input.GetKey (KeyCode.D)) && 
-				    inputHandler.currentState != Player.State.Attack) {
+				if ((Input.GetKey (KeyCode.D)) ) {
 								m_Ani.SetFloat ("RunDirection1", 3);
 				} else {
 								m_Ani.SetFloat ("RunDirection1", 4);

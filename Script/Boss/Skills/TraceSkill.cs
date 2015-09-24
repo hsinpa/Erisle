@@ -17,7 +17,7 @@ namespace Boss {
 		
 		void OnDrawGizmos() {
 				Gizmos.color = Color.blue;
-			Gizmos.DrawLine(transform.position, transform.position + Vector3.up +transform.forward  * 3f);
+			Gizmos.DrawLine(transform.position + Vector3.up, transform.position  +transform.forward  * 3f);
 		}
 
 		IEnumerator checkRangeAttackTime(float waitTime) {
@@ -36,7 +36,8 @@ namespace Boss {
 		public void enter (BasicBoss boss) {
 			self = boss;
 			moveBehavior = new MoveBehavior(boss,  self.maxAttackVelocity, delegate {
-				if (Physics.Linecast(transform.position, transform.position + Vector3.up + transform.forward * 3f, self.playerLayer)) {
+				if (Physics.Linecast(transform.position + Vector3.up,
+				                     transform.position + transform.forward * 3f, self.playerLayer)) {
 					self.changeState(gameObject.AddComponent<AttackSkill>());
 				}
 			});

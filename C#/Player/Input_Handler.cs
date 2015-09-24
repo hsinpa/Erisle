@@ -29,7 +29,7 @@ public class Input_Handler : MonoBehaviour {
 	private void handleInput() {
 		if (Input.GetButtonDown(PlayerPrefs.GetString("Attack1","Fire2"))) attack1Button.execute();
 
-		if (Time.time > Attack_Time) {
+		if (Time.time > Attack_Time && currentState != Player.State.Disable ) {
 			Attack_Num=0;
 			currentState = Player.State.Idle;
 			swordCollider.goAttack = false;
