@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 3c23102136a021c439a3d070599b6e6d
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - objectFocus: {instanceID: 0}
+  - dofHdrShader: {fileID: 4800000, guid: acd613035ff3e455e8abf23fdc8c8c24, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
