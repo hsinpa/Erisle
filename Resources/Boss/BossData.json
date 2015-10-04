@@ -1,6 +1,6 @@
 {
-  "StoneGolem" : [
-      {"name" : "Normal",
+  "StoneGolem" : {
+      "AttackList" : [{"name" : "Normal",
         "chance" : 50,
         "damage" : 30,
         "effect" : "push"
@@ -14,6 +14,11 @@
         "chance" : 0,
         "damage" :30 ,
         "effect" : "fly"
+        }],
+        "RangeWeapon" : {
+            "name" : "RockSiege",
+            "damage" : 30,
+            "effect" : "fly"
         }
-    ]
+    }
 }

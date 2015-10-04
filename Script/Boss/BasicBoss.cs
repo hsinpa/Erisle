@@ -20,7 +20,7 @@ namespace Boss {
 		public Vector3 centerPoint;
 
 		public List<AttackSet> attackSets = new List<AttackSet>();
-		public List<JSONObject> bossData = new List<JSONObject>();
+		public JSONObject bossData;
 
 		protected DemageBehavior damagebehavior;
 		public void Start() {
@@ -45,7 +45,7 @@ namespace Boss {
 		public void getBossData(string bossName) {
 			TextAsset bindata= Resources.Load("Boss/BossData") as TextAsset;
 			JSONObject jsonObject = new JSONObject(bindata.ToString());
-			bossData = jsonObject.GetField(bossName).list;
+			bossData = jsonObject.GetField(bossName);
 		}
 	}
 }

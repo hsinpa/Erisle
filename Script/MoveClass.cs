@@ -6,7 +6,7 @@ public abstract class MoveClass : MonoBehaviour {
 	public Animator m_Ani;//Animator控制器
 	public float m_MoveSpeed;//移動速度
 	public float m_RotaSpeed;//旋轉速度
-	public float m_Grivate = 9.8f;//重力
+	public float m_Grivate = 20f;//重力
 	public float m_JumpHeight = 4;  //跳躍高度
 	public bool m_CanCtrl = true;//是否能控制
 	public bool m_UseGrivate = true;//是否使用重力
@@ -51,9 +51,9 @@ public abstract class MoveClass : MonoBehaviour {
 			m_isGround = true;
 		}
 		//限制最大掉落速度 = 重力*2
-		if (MoveDir.y <= -m_Grivate*2 && m_Grivate != 0)
+		if (MoveDir.y <= -m_Grivate*10 && m_Grivate != 0)
 		{	
-			MoveDir.y = -m_Grivate*2;
+			MoveDir.y = -m_Grivate*10;
 		}
 		//m_CharCtrl.Move( new Vector3(0,MoveDir.y,0));
 	}

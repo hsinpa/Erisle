@@ -20,9 +20,5 @@ namespace Boss {
 
 			return attackSet[0];
 		}
-
-
-
-
 	}
 }

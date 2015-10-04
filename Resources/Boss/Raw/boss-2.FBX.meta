@@ -402,6 +402,7 @@ ModelImporter:
     7400020: "\u964D\u843D"
     7400022: "\u5439\u865F\u89D2"
     7400024: Take 001
+    7400026: "\u6EEF\u7A7A"
     9500000: //RootNode
     13700000: body
     13700002: foot
@@ -2570,8 +2571,8 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .958665311
-        functionName: Hold
+      - time: .798114836
+        functionName: Range
         data: 
         objectReferenceParameter: {fileID: 103476, guid: cdf9b613ec082d042ae73751c6c0976b,
           type: 2}
@@ -4237,7 +4238,15 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: .842947304
+        functionName: Jump
+        data: 
+        objectReferenceParameter: {fileID: 103476, guid: cdf9b613ec082d042ae73751c6c0976b,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
@@ -4650,7 +4659,15 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: .751080811
+        functionName: Hold
+        data: 
+        objectReferenceParameter: {fileID: 103476, guid: cdf9b613ec082d042ae73751c6c0976b,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
@@ -5464,7 +5481,420 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 1
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: boss01
+        weight: 1
+      - path: boss01/body
+        weight: 1
+      - path: boss01/foot
+        weight: 1
+      - path: boss01/hair
+        weight: 1
+      - path: boss01/hand
+        weight: 1
+      - path: boss01/head
+        weight: 1
+      - path: boss01/items
+        weight: 1
+      - path: boss01/items02
+        weight: 1
+      - path: boss01/L_foot 1
+        weight: 1
+      - path: boss01/L_items
+        weight: 1
+      - path: boss01/R_foot 1
+        weight: 1
+      - path: boss01/R_itesm
+        weight: 1
+      - path: group
+        weight: 1
+      - path: Main_move
+        weight: 1
+      - path: Main_move/ikHandle5
+        weight: 1
+      - path: Main_move/L_foot
+        weight: 1
+      - path: Main_move/L_foot/curve4
+        weight: 1
+      - path: Main_move/L_foot/L_foot_all
+        weight: 1
+      - path: Main_move/L_foot/L_foot_all/L_thenar
+        weight: 1
+      - path: Main_move/L_foot/L_foot_all/L_thenar/ikHandle2
+        weight: 1
+      - path: Main_move/L_foot/L_foot_all/L_thenar/ikHandle8
+        weight: 1
+      - path: Main_move/L_foot/L_foot_all/L_tip
+        weight: 1
+      - path: Main_move/L_foot/L_foot_all/L_tip/ikHandle9
+        weight: 1
+      - path: Main_move/move
+        weight: 1
+      - path: Main_move/move/chest
+        weight: 1
+      - path: Main_move/move/curve3
+        weight: 1
+      - path: Main_move/move/group1
+        weight: 1
+      - path: Main_move/move/group1/cluster11Handle
+        weight: 1
+      - path: Main_move/move/group2
+        weight: 1
+      - path: Main_move/move/group2/cluster12Handle
+        weight: 1
+      - path: Main_move/move/group3
+        weight: 1
+      - path: Main_move/move/group3/cluster13Handle
+        weight: 1
+      - path: Main_move/move/group4
+        weight: 1
+      - path: Main_move/move/group4/cluster14Handle
+        weight: 1
+      - path: Main_move/move/group5
+        weight: 1
+      - path: Main_move/move/group5/cluster15Handle
+        weight: 1
+      - path: Main_move/move/group11
+        weight: 1
+      - path: Main_move/move/group12
+        weight: 1
+      - path: Main_move/move/hip
+        weight: 1
+      - path: Main_move/move/root
+        weight: 1
+      - path: Main_move/move/root/L_hip
+        weight: 1
+      - path: Main_move/move/root/L_hip/L_knee
+        weight: 1
+      - path: Main_move/move/root/L_hip/L_knee/L_ankle
+        weight: 1
+      - path: Main_move/move/root/L_hip/L_knee/L_ankle/L_heel
+        weight: 1
+      - path: Main_move/move/root/L_hip/L_knee/L_ankle/L_heel/L_foot 2
+        weight: 1
+      - path: Main_move/move/root/L_hip/L_knee/L_ankle/L_heel/L_foot 2/L_toe
+        weight: 1
+      - path: Main_move/move/root/R_hip
+        weight: 1
+      - path: Main_move/move/root/R_hip/R_knee
+        weight: 1
+      - path: Main_move/move/root/R_hip/R_knee/R_ankle
+        weight: 1
+      - path: Main_move/move/root/R_hip/R_knee/R_ankle/R_heel
+        weight: 1
+      - path: Main_move/move/root/R_hip/R_knee/R_ankle/R_heel/R_foot 2
+        weight: 1
+      - path: Main_move/move/root/R_hip/R_knee/R_ankle/R_heel/R_foot 2/R_toe
+        weight: 1
+      - path: Main_move/move/root/spine01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_BacK_hand
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm/L_BacK_hand
+          1
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm/L_BacK_hand
+          1/L_back_hand
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm/L_Back_upperarm
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm/L_Back_upperarm/L_Back_wrist
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm/L_Back_upperarm/L_Back_wrist/L_Back_Index01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm/L_Back_upperarm/L_Back_wrist/L_Back_Index01/L_Back_Index02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm/L_Back_upperarm/L_Back_wrist/L_Back_Index01/L_Back_Index02/L_Back_Index03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm/L_Back_upperarm/L_Back_wrist/L_Back_Ling01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm/L_Back_upperarm/L_Back_wrist/L_Back_Ling01/L_Back_Ling02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm/L_Back_upperarm/L_Back_wrist/L_Back_Ling01/L_Back_Ling02/L_Back_Ling03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm/L_Back_upperarm/L_Back_wrist/L_Back_Little01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm/L_Back_upperarm/L_Back_wrist/L_Back_Little01/L_Back_Little02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm/L_Back_upperarm/L_Back_wrist/L_Back_Little01/L_Back_Little02/L_Back_Little03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm/L_Back_upperarm/L_Back_wrist/L_Back_Middle01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm/L_Back_upperarm/L_Back_wrist/L_Back_Middle01/L_Back_Middle02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm/L_Back_upperarm/L_Back_wrist/L_Back_Middle01/L_Back_Middle02/L_Back_Middle03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm/L_Back_upperarm/L_Back_wrist/L_Back_Thumb01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm/L_Back_upperarm/L_Back_wrist/L_Back_Thumb01/L_Back_Thumb02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_Back_arm/L_Back_upperarm/L_Back_wrist/L_Back_Thumb01/L_Back_Thumb02/L_Back_Thumb03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_Back_shoulder/L_BacK_arm1
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_hand1
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_hand
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_hand/L_front_hand
+          1
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_hand/L_front_hand
+          1/pasted__default2
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_upperarm
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_upperarm/L_front_wrist
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_upperarm/L_front_wrist/L_front_Index01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_upperarm/L_front_wrist/L_front_Index01/L_front_Index02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_upperarm/L_front_wrist/L_front_Index01/L_front_Index02/L_front_Index03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_upperarm/L_front_wrist/L_front_Ling01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_upperarm/L_front_wrist/L_front_Ling01/L_front_Ling02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_upperarm/L_front_wrist/L_front_Ling01/L_front_Ling02/L_front_Ling03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_upperarm/L_front_wrist/L_front_Little01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_upperarm/L_front_wrist/L_front_Little01/L_front_Little02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_upperarm/L_front_wrist/L_front_Little01/L_front_Little02/L_front_Little03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_upperarm/L_front_wrist/L_front_Middle01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_upperarm/L_front_wrist/L_front_Middle01/L_front_Middle02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_upperarm/L_front_wrist/L_front_Middle01/L_front_Middle02/L_front_Middle03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_upperarm/L_front_wrist/L_front_Thumb01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_upperarm/L_front_wrist/L_front_Thumb01/L_front_Thumb02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm/L_front_upperarm/L_front_wrist/L_front_Thumb01/L_front_Thumb02/L_front_Thumb03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/L_front_shoulder01/L_front_shoulder/L_front_arm1
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/neck
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/neck/head
+          1
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/neck/head
+          1/follicle1
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/neck/head
+          1/follicle1/baseCurve2
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/neck/head
+          1/head01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/neck/head
+          1/top02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/neck/head
+          1/top02/follicle2
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/neck/head
+          1/top02/follicle2/baseCurve4
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/neck/head
+          1/top02/hair01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/neck/head
+          1/top02/hair01/hair02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/neck/head
+          1/top02/hair01/hair02/hair03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/neck/head
+          1/top02/hair01/hair02/hair03/hair04
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/neck/head
+          1/top02/hair01/hair02/hair03/hair04/hair05
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/neck/head
+          1/top02/hair01/hair02/hair03/hair04/hair05/hair06
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/neck/head
+          1/top02/hair01/hair02/hair03/hair04/hair05/hair06/hair07
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/neck1
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/nurbsCircle3
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/nurbsCircle4
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_BacK_hand
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_back_hand
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_back_hand/R_back_hand
+          1
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_back_hand/R_back_hand
+          1/default1
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_Back_upperarm
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_Back_upperarm/R_Back_wrist
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_Back_upperarm/R_Back_wrist/R_Back_Index01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_Back_upperarm/R_Back_wrist/R_Back_Index01/R_Back_Index02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_Back_upperarm/R_Back_wrist/R_Back_Index01/R_Back_Index02/R_Back_Index03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_Back_upperarm/R_Back_wrist/R_Back_Little01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_Back_upperarm/R_Back_wrist/R_Back_Little01/R_Back_Little02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_Back_upperarm/R_Back_wrist/R_Back_Little01/R_Back_Little02/R_Back_Little03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_Back_upperarm/R_Back_wrist/R_Back_Middle01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_Back_upperarm/R_Back_wrist/R_Back_Middle01/R_Back_Middle02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_Back_upperarm/R_Back_wrist/R_Back_Middle01/R_Back_Middle02/R_Back_Middle03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_Back_upperarm/R_Back_wrist/R_Back_Ring01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_Back_upperarm/R_Back_wrist/R_Back_Ring01/R_Back_Ring02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_Back_upperarm/R_Back_wrist/R_Back_Ring01/R_Back_Ring02/R_Back_Ring03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_Back_upperarm/R_Back_wrist/R_Back_Thumb01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_Back_upperarm/R_Back_wrist/R_Back_Thumb01/R_Back_Thumb02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_Back_arm/R_Back_upperarm/R_Back_wrist/R_Back_Thumb01/R_Back_Thumb02/R_Back_Thumb03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_Back_shoulder/R_back_arm1
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_hand
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_hand
+          1
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_hand
+          1/R_front_hand 2
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_hand
+          1/R_front_hand 2/default2
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_upperarm
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_upperarm/R_front_wrist
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_upperarm/R_front_wrist/R_front_Index01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_upperarm/R_front_wrist/R_front_Index01/R_front_Index02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_upperarm/R_front_wrist/R_front_Index01/R_front_Index02/R_front_Index03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_upperarm/R_front_wrist/R_front_Little01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_upperarm/R_front_wrist/R_front_Little01/R_front_Little02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_upperarm/R_front_wrist/R_front_Little01/R_front_Little02/R_front_Little03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_upperarm/R_front_wrist/R_front_Middle01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_upperarm/R_front_wrist/R_front_Middle01/R_front_Middle02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_upperarm/R_front_wrist/R_front_Middle01/R_front_Middle02/R_front_Middle03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_upperarm/R_front_wrist/R_front_Ring01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_upperarm/R_front_wrist/R_front_Ring01/R_front_Ring02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_upperarm/R_front_wrist/R_front_Ring01/R_front_Ring02/R_front_Ring03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_upperarm/R_front_wrist/R_front_Thumb01
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_upperarm/R_front_wrist/R_front_Thumb01/R_front_Thumb02
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm/R_front_upperarm/R_front_wrist/R_front_Thumb01/R_front_Thumb02/R_front_Thumb03
+        weight: 1
+      - path: Main_move/move/root/spine01/spine02/spine03/spine04/spine05/chest 1/R_front_shoulder01/R_front_shoulder/R_front_arm1
+        weight: 1
+      - path: Main_move/R_foot
+        weight: 1
+      - path: Main_move/R_foot/curve4 1
+        weight: 1
+      - path: Main_move/R_foot/R_foot_all
+        weight: 1
+      - path: Main_move/R_foot/R_foot_all/R_thenar
+        weight: 1
+      - path: Main_move/R_foot/R_foot_all/R_thenar/ikHandle1
+        weight: 1
+      - path: Main_move/R_foot/R_foot_all/R_thenar/ikHandle6
+        weight: 1
+      - path: Main_move/R_foot/R_foot_all/R_tip
+        weight: 1
+      - path: Main_move/R_foot/R_foot_all/R_tip/ikHandle7
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: "\u6EEF\u7A7A"
+      takeName: Take 001
+      firstFrame: 506
+      lastFrame: 506
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 1
@@ -5903,8 +6333,10 @@ ModelImporter:
     legStretch: .0500000007
     feetSpacing: 0
     rootMotionBoneName: move
+    hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
+  humanoidOversampling: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

@@ -1,0 +1,261 @@
+fileFormatVersion: 2
+guid: c2e0ad50266dcc244bd885003680a6a5
+timeCreated: 1443865920
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: group
+    100002: group1
+    100004: group2
+    100006: group3
+    100008: group4
+    100010: group5
+    100012: group6
+    100014: pasted__group2
+    100016: //RootNode
+    100018: rockX2:rock01
+    100020: rockX2:rock02
+    100022: rockX3:rock02
+    100024: rockX4:rock01
+    100026: rockX5:rock01
+    100028: rockX6:rock02
+    100030: rockX7:rock01
+    100032: rockX8:rock02
+    100034: rockX9:rock01
+    400000: group
+    400002: group1
+    400004: group2
+    400006: group3
+    400008: group4
+    400010: group5
+    400012: group6
+    400014: pasted__group2
+    400016: //RootNode
+    400018: rockX2:rock01
+    400020: rockX2:rock02
+    400022: rockX3:rock02
+    400024: rockX4:rock01
+    400026: rockX5:rock01
+    400028: rockX6:rock02
+    400030: rockX7:rock01
+    400032: rockX8:rock02
+    400034: rockX9:rock01
+    2300000: rockX2:rock01
+    2300002: rockX2:rock02
+    2300004: rockX3:rock02
+    2300006: rockX4:rock01
+    2300008: rockX5:rock01
+    2300010: rockX6:rock02
+    2300012: rockX7:rock01
+    2300014: rockX8:rock02
+    2300016: rockX9:rock01
+    3300000: rockX2:rock01
+    3300002: rockX2:rock02
+    3300004: rockX3:rock02
+    3300006: rockX4:rock01
+    3300008: rockX5:rock01
+    3300010: rockX6:rock02
+    3300012: rockX7:rock01
+    3300014: rockX8:rock02
+    3300016: rockX9:rock01
+    4300000: rockX2:rock02
+    4300002: rockX2:rock01
+    4300004: rockX3:rock02
+    4300006: rockX4:rock01
+    4300008: rockX5:rock01
+    4300010: rockX6:rock02
+    4300012: rockX7:rock01
+    4300014: rockX8:rock02
+    4300016: rockX9:rock01
+    7400000: Up
+    7400002: Down
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Up
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group
+        weight: 1
+      - path: group/rockX3:rock02
+        weight: 1
+      - path: group1
+        weight: 1
+      - path: group1/rockX4:rock01
+        weight: 1
+      - path: group2
+        weight: 1
+      - path: group2/rockX5:rock01
+        weight: 1
+      - path: group3
+        weight: 1
+      - path: group3/rockX6:rock02
+        weight: 1
+      - path: group4
+        weight: 1
+      - path: group4/rockX7:rock01
+        weight: 1
+      - path: group5
+        weight: 1
+      - path: group5/rockX8:rock02
+        weight: 1
+      - path: group6
+        weight: 1
+      - path: group6/pasted__group2
+        weight: 1
+      - path: group6/pasted__group2/rockX9:rock01
+        weight: 1
+      - path: rockX2:rock01
+        weight: 1
+      - path: rockX2:rock02
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Down
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group
+        weight: 1
+      - path: group/rockX3:rock02
+        weight: 1
+      - path: group1
+        weight: 1
+      - path: group1/rockX4:rock01
+        weight: 1
+      - path: group2
+        weight: 1
+      - path: group2/rockX5:rock01
+        weight: 1
+      - path: group3
+        weight: 1
+      - path: group3/rockX6:rock02
+        weight: 1
+      - path: group4
+        weight: 1
+      - path: group4/rockX7:rock01
+        weight: 1
+      - path: group5
+        weight: 1
+      - path: group5/rockX8:rock02
+        weight: 1
+      - path: group6
+        weight: 1
+      - path: group6/pasted__group2
+        weight: 1
+      - path: group6/pasted__group2/rockX9:rock01
+        weight: 1
+      - path: rockX2:rock01
+        weight: 1
+      - path: rockX2:rock02
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
